@@ -1,0 +1,798 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: #fffef8;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** end reset css **/
+body {
+  margin: auto;
+  font-family: "Work Sans";
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  max-width: 1140px;
+}
+
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 50px 0;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Syne";
+  font-size: 22px;
+  font-weight: 800;
+  color: #b1663c;
+}
+
+h1 > span {
+  font-family: "Work Sans";
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 30px;
+  color: #1d6154;
+}
+
+
+
+
+
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+nav li {
+    padding: 0 20px;
+    font-size: 1.2em;
+    
+}
+
+li:hover {
+    color: black;
+}
+
+li a:hover, .user-login-formulary a:hover, #top-bar a:hover, a:hover,
+.update-btn:hover {
+    color: black;
+    font-weight: bold; /* Le texte devient en gras lors du survol */
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.instagram-icon {
+    width: 20px;
+}
+
+
+
+
+
+
+
+#introduction {
+  display: flex;
+  align-items: center;
+}
+
+#introduction figure {
+  flex: 1;
+}
+
+#introduction img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  margin-top: 100px; /* Ajoute de l'espace en haut de la classe */
+}
+
+#introduction article {
+  flex: 1;
+}
+
+#introduction h2 {
+  margin-bottom: 1em;
+  margin-top: 70px; /* Ajoute de l'espace en haut de la classe */
+}
+
+#introduction p {
+  margin-bottom: 0.5em;
+  margin-right: 50px; /* Réduit la marge à droite */
+}
+
+
+
+
+/** PORTFOLIO STYLES **/
+
+#portfolio h2 {
+  text-align: center;
+  margin-top: 100px; /* Ajoute de l'espace en haut de la classe */
+}
+
+.filters-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 50px 0;
+}
+
+button {
+  height: 37px;
+  min-width: 100px;
+  padding: 0 10px;
+  border-radius: 60px;
+  border: 1px solid #1d6154;
+  background-color: #ffffff;
+  color: #1d6154;
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+button:hover {
+  border: 1px solid #b1663c;
+  color: #b1663c;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.is-active {
+  background-color: #1d6154;
+  color: #ffffff;
+}
+
+.is-active:hover {
+  background-color: #1d6154;
+  border: 1px solid #1d6154;
+  color: #ffffff;
+}
+
+.gallery {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  margin: 0 auto; 
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/** CONTACT STYLES **/
+#contact {
+  width: 30%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#contact > * {
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact form {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact input {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#contact label {
+  margin: 2em 0 1em 0;
+}
+
+#contact textarea {
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"] {
+    font-family: 'Syne'; /* Définit la police de caractères pour le bouton soumettre */
+    font-weight: 700; /* Définit le poids de la police à 700 (gras) */
+    color: white; /* Définit la couleur du texte en blanc */
+    background-color: #1D6154; /* Définit la couleur de fond */
+    margin: 2em auto; /* Ajoute une marge en haut et en bas de 2em et centre horizontalement */
+    height: 10px;
+    width: 180px; /* Définit la largeur à 180px */
+    text-align: center; /* Centre le texte dans le bouton */
+    border-radius: 60px; /* Ajoute une bordure arrondie */
+    cursor: pointer; /* Change le curseur en une main */
+}
+
+input[type="submit"]:active {
+    background-color: black; /* Change la couleur de fond du bouton lorsqu'il est activé (cliqué) */
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em;
+font-size: 10px;
+  cursor: pointer; /* Change le curseur en une main */
+
+}
+
+
+
+/* STYLE LOGIN.HTML */
+
+#login {
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 18px;
+  width: 25%;
+
+}
+
+#login label {
+  margin-top: 25px;
+}
+
+#login input {
+  height: 45px;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  border: none;
+}
+
+#login button {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  font-size: 1em;
+  height: 2.5em;
+  background-color: #1d6154;
+  width: 48%;
+  text-align: center;
+  border-radius: 60px;
+  cursor: pointer;
+  margin: 37px auto 0 auto;
+}
+
+#login button:hover {
+  background-color: #1d6154;
+  border: 1px solid #1d6154;
+  color: #ffffff;
+}
+
+#login a {
+  color: #000000;
+}
+
+.error-message {
+  padding: 10px 0 20px 0;
+  color: #d65353;
+  text-align: center;
+}
+
+
+
+
+/* ADMIN ELEMENTS */
+
+.edit-link {
+  margin-top: 105px; /* Ajoute de l'espace en haut de la classe */
+}
+
+.edit-bar {
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+}
+
+
+
+
+#introduction figure {
+  display: flex;
+  flex-direction: column;
+}
+#introduction a {
+  margin: 16px 0 0 57px;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 31px;
+  margin-bottom: 1em;
+}
+
+.edit-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.edit-link i {
+  padding-right: 8px;
+}
+
+
+
+
+/* STYLE MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+
+}
+
+.modal-box-galerie-photo,
+.modal-box-ajout-photo {
+  width: 500px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 20px;
+  transition: all 5s ease-in-out;
+}
+.modal-box-ajout-photo .modal-close {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-box-galerie-photo .modal-close {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.close-icon,
+.close-icon-2,
+.back-icon {
+  cursor: pointer;
+}
+
+.modal-box-galerie-photo i {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.modal button {
+  background-color: #1d6154;
+  color: #fff;
+  width: 237px;
+  margin-top: 38px;
+}
+
+.modal button:hover {
+  background-color: #1d6154;
+  border: 1px solid #1d6154;
+  color: #ffffff;
+}
+
+#delete-galery {
+  padding: 23px 0;
+  text-decoration: none;
+  color: #d65353;
+  cursor: pointer;
+}
+
+.modal-gallery {
+    border-bottom: 1px solid #b3b3b3;
+    margin-top: 37.5px; /* Réduire de 20% */
+    padding-bottom: 37.5px; /* Réduire de 20% */
+    display: flex;
+    flex-flow: row wrap;
+    gap: 6.4px; /* Réduire de 20% */
+    width: 336px; /* Réduire de 20% */
+  }
+
+  .modal-gallery figure {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4px; /* Réduire de 20% */
+    padding-bottom: 8px; /* Réduire de 20% */
+    width: 60.8px; /* Réduire de 20% */
+    position: relative;
+    cursor: pointer;
+  }
+
+  .trash-icon {
+    position: absolute;
+    width: 13.6px; /* Réduire de 20% */
+    height: 13.6px; /* Réduire de 20% */
+    margin: 4.8px 0 0 43.2px; /* Réduire de 20% */
+    cursor: pointer;
+  }
+
+  .move-icon {
+    position: absolute;
+    width: 13.6px; /* Réduire de 20% */
+    height: 13.6px; /* Réduire de 20% */
+    margin: 4.8px 0 0 27.2px; /* Réduire de 20% */
+    cursor: pointer;
+  }
+
+  
+
+.modal-gallery figure .move-icon {
+  visibility: hidden;
+  opacity: 0;
+}
+.modal-gallery figure:hover .move-icon {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.modal-project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-title {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.8px; /* Réduire de 20% */
+    line-height: 24px; /* Réduire de 20% */
+    text-align: center;
+    color: #000000;
+  }
+
+  #ajout-box {
+    width: 336px; /* Réduire de 20% */
+    padding: 28.8px 0 24px 0; /* Réduire de 20% */
+    display: flex;
+    flex-flow: column;
+  }
+
+  .upload-photo-box {
+    background: #e8f1f7;
+    border-radius: 2.4px; /* Réduire de 20% */
+    height: 150px; /* Réduire de 20% */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px; /* Réduire de 20% */
+    position: relative;
+  }
+
+#ajout-box input,
+#ajout-box select {
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  height: 51px;
+  border: none;
+  padding: 0 28px 0 16px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}
+
+#ajout-box .validate {
+  border-top: 1px solid #b3b3b3;
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.labelTitle,
+.labelCat {
+  padding: 21px 0 10px 0;
+}
+
+#valider-button {
+    background: #a7a7a7;
+    border-radius: 48px; /* Réduire de 20% */
+    font-family: "Syne";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.2px; /* Réduire de 20% */
+    line-height: 13.6px; /* Réduire de 20% */
+    width: 189.6px; /* Réduire de 20% */
+    height: 28.8px; /* Réduire de 20% */
+    margin: 20px auto 0px;
+  }
+
+  .modal-non-active {
+    display: none;
+  }
+
+.regular-icon {
+    font-size: 16px; /* Définir la taille de l'icône */
+  }
+  
+
+input[type="file"] {
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+}
+
+input[type="file"] {
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+}
+
+.photo-upload-button {
+  width: 173px;
+  height: 36px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  background: #cbd6dc;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  color: #306685;
+  border: 1px solid #cbd6dc;
+}
+
+.photo-upload-button:hover {
+  border: 1px solid #306685;
+}
+
+#preview-image {
+  position: absolute;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.error-form {
+  color: #d65353;
+  margin-top: 7px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.type-files {
+  margin-top: 7px;
+  color: #444444;
+  font-size: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
